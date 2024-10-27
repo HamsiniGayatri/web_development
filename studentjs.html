@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: azure;
+            text-align: start;
+            color: black;
+
+        }
+        label{
+            width:140px;
+            display:inline-block;
+            margin:0.2cm;
+            font-size: 16px;
+        }
+        input{
+            padding:4px;
+            margin:5px;
+            font-size: 16px;
+
+        }
+        input#btn{
+            padding:5px;
+            margin: 5px 76px 2px 78px;
+        }
+    </style>
+</head>
+<body>
+    <span id="Roll"></span>
+    <span id="Name"></span>
+    <span id="dept"></span>
+    <span id="Section"></span>
+    <span id="total_marks"></span>
+    <span id="obtained_marks"></span>
+    <span id="percentage"></span>
+    <span id="grade"></span>
+    <br>
+    <br>
+    <label for="Roll" >Roll Number :</label>
+    <input type="text" id="Roll">
+    <br>
+    <br>
+    <label for="Name" >Name :</label>
+    <input type="text" id="Name">
+    <br>
+    <br>
+    <label for="dept" >Department :</label>
+    <input type="text" id="dept">
+    <br>
+    <br>
+    <label for="Section" >Section :</label>
+    <input type="text" id="Section">
+    <br>
+    <br>
+    <label for="s1" >subject1</label>
+    <input type="text" id="s1" placeholder="Marks">
+    
+    <label for="s2" >subject2</label>
+    <input type="text" id="s2" placeholder="Marks">
+    
+    <label for="s3" >subject3</label>
+    <input type="text" id="s3" placeholder="Marks">
+    <br>
+    <label for="s4" >subject4</label>
+    <input type="text" id="s4" placeholder="Marks">
+    
+    <label for="s5" >subject5</label>
+    <input type="text" id="s5" placeholder="Marks">
+    
+    <label for="s6" >subject6</label>
+    <input type="text" id="s6" placeholder="Marks">
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="click" id="btn" onclick="msg">
+    <br>
+    <br>
+</body>
+</html>
+<script>
+    
+    
+    document.querySelector('#btn').addEventListener('click',function(){
+        function msg() {
+        if(percentage >= 90)
+    {
+        document.getElementById('#grade').innerHTML="GRADE:S";
+    }
+    else if(percentage >=80 && percentage <= 90)
+    {
+        document.getElementById('#grade').innerHTML="GRADE:A";
+    }
+    else
+    {
+        document.getElementById('#grade').innerHTML="GRADE:C";
+    }
+    }
+        let s1 = document.querySelector('#s1').value;
+        let s2 = document.querySelector('#s2').value;
+        let s3 = document.querySelector('#s3').value;
+        let s4 = document.querySelector('#s4').value;
+        let s5 = document.querySelector('#s5').value;
+        let s6 = document.querySelector('#s6').value;
+
+        let obtained_grade = (s1 + s2 + s3 + s4 + s5 + s6);
+        let total_marks = 600;
+        let percentage = ((s1 + s2 + s3 + s4 + s5 + s6)/600)*100;
+        let grade = function msg();
+}
+
+    );
+</script>

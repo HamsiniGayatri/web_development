@@ -1,0 +1,333 @@
+.container
+{
+    width:100%;
+    height:400vh;
+    background-color: whitesmoke;
+}
+.container .row1
+{
+    width:100%;
+    height:10vh;
+    background-color:white;
+    display:flex;
+    
+}
+.container .row1 .col1
+{
+    width:50%;
+    height:5vh;
+    background-image:repeating-linear-gradient(orangered,white);
+    justify-content: space-between;
+    margin-right:10px;
+    text-align: center;
+    font-family: serif;
+    color: black;
+    border-radius: 10px 20px;
+    
+}
+.container .row1 .col2
+{
+    width:50%;
+    height:5vh;
+    background-image:repeating-linear-gradient(orangered,white);
+    text-align: center;
+    font-family: serif;
+    color: black;
+    border-radius: 10px 20px;
+}
+.row2{
+      width:100%;
+      height:10vh;
+      background-image: repeating-linear-gradient(red,orange);
+      margin-top:10px;
+      font-family: serif;
+
+}
+.row2 nav{
+
+}
+.row2 nav ul{
+    float:right;
+    padding: 20px;
+    
+}
+.row2 nav ul li{
+    list-style: none;
+    display:inline-block;
+    padding:0px 10px 20px 0px;
+    margin-right:10px;
+    
+}
+.row2 nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+
+}
+.row2 nav ul li a:hover{
+    background-color: linen;
+    color: gray;
+}
+.row3
+{
+    width:100%;
+    height:75vh;
+    background-color: beige;
+}
+.row3 img
+{
+    width: 100%;
+    height: 75vh;
+    background-image: url(img/workimg.jpg);
+    background-blend-mode: lighten;
+}
+.row4 
+{
+    width:100%;
+    height:40vh;
+    background-color: whitesmoke;
+    margin: 50px 0px 5px 0px;
+    display:flex;
+}
+.row4 .box1
+{
+    width:50%;
+    height:40vh;
+    background-color: whitesmoke;
+}
+.row4 .box1 img
+{
+    width:50%;
+    height:35vh;
+    background-image:url(img/myimg.jpg);
+    border-radius:100%;
+    border-style: solid;
+    border-width: thick;
+    border-color: orangered;
+    background-position:right;
+    position:relative;
+    right:50px;
+    left:50px;
+    bottom:20px;
+    top:20px;
+
+}
+.row4 .box2
+{
+    width:50%;
+    height:40vh;
+    background-color: whitesmoke;
+    margin-left: 25px;
+}
+.row4 .box2 p
+{
+    margin:60px 10px 20px 10px;
+    font-size: medium;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+.box2 button
+{
+    background-image: repeating-linear-gradient(red,orange);
+}
+.row5
+{
+    width:100%;
+    height:3vh;
+    background-image: repeating-linear-gradient(red,orange);
+}
+.row5 h2
+{
+    font-size: medium;
+    color: black;
+    text-align: center;
+}
+.row6 
+{
+    width:100%;
+    height:45vh;
+    display:flex;
+    background-color: beige;
+    margin:15px;
+}
+.row6 .box1
+{
+    width:25%;
+    height:45vh;
+    background-color: whitesmoke;
+}
+.row6 .box2
+{
+    width:25%;
+    height:45vh;
+    background-color: whitesmoke;
+}
+.row6 .box3
+{
+    width:25%;
+    height:45vh;
+    background-color: whitesmoke;
+}
+.row6 .box4
+{
+    width:25%;
+    height:45vh;
+    background-color: whitesmoke;
+}
+.row6 .box1 img
+{
+    width:85%;
+    height:30vh;
+}
+.row7
+{
+    width:100%;
+    height:3vh;
+    background-image: repeating-linear-gradient(red,orange);
+    text-align: center;
+}
+.row7 h2
+{
+    text-align: center;
+    color: black;
+    font-size: medium;
+}
+.row8
+{
+    width:100%;
+    height:45vh;
+    background-color: bisque;
+    display:flex;
+    margin:15px;
+}
+.row8 .box1
+{
+    width:33%;
+    height:45vh;
+    background-color: whitesmoke;
+}
+.row8 .box1 img
+{
+    margin:15px;
+    width:75%;
+    height:30vh;
+
+}
+.row8 .box2
+{
+    width:34%;
+    height:45vh;
+    background-color: whitesmoke;
+}
+.row8 .box3
+{
+    width:33%;
+    height:45vh;
+    background-color: whitesmoke;
+}
+.row8 .box3 img
+{
+    margin:15px;
+    width:75%;
+    height:30vh;
+    
+}
+.row9
+{
+    width:100%;
+    height:10vh;
+    background-color: whitesmoke;
+    display:flex;
+}
+.row9 .box1
+{
+    width:33%;
+    height:5vh;
+    background-color: whitesmoke;
+}
+.row9 .box2
+{
+    width:34%;
+    height:5vh;
+    background-color: whitesmoke;
+}
+.row9 .box3
+{
+    width:33%;
+    height:5vh;
+    background-color: whitesmoke;
+}
+
+.row9 .box1 button
+{
+    position: relative;
+    position: absolute;
+    translate: middle;
+    padding-left: 5%;
+    padding-right:5%;
+    text-align: center;
+    margin-left: 5%;
+    background-image: repeating-linear-gradient(red,orange);
+}
+.row9 .box2 button
+{
+    position: relative;
+    position: absolute;
+    translate: middle;
+    padding-left: 5%;
+    padding-right:5%;
+    text-align: center;
+    margin-left: 5%;
+    background-image: repeating-linear-gradient(red,orange);
+    
+}
+.row9 .box3 button
+{
+    position: relative;
+    position: absolute;
+    translate: middle;
+    padding-left: 5%;
+    padding-right:5%;
+    text-align: center;
+    margin-left: 5%;
+    background-image: repeating-linear-gradient(red,orange);
+}
+.row10 
+{
+    width:100%;
+    height:3vh;
+    background-image: repeating-linear-gradient(red,orange);
+    text-align: center;
+}
+.row10 h2
+{
+    text-align: center;
+    color: black;
+    font-size: medium;
+}
+.row11
+{
+    width:100%;
+    height:35vh;
+    text-align:center;    
+    margin:5vh;
+    padding-left: 5%;
+
+}
+.row12
+{
+    width:100%;
+    height:3vh;
+    background-image: repeating-linear-gradient(red,orange);
+    text-align: end;
+    padding-right: 6%;
+}
+.row12 h2
+{
+    text-align: end;
+    color: black;
+    font-size: medium;
+}
+
+

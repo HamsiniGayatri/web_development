@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:brown;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <span id="result">Fahrenheit Temperature</span>
+    <br>
+    <br>
+    <label for="Temperature">Temperature in Celsius:</label>
+    <input type="text" id="c" placeholder="enter temp in celsius">
+    <br>
+    <br>
+    <input type="submit" value="convert" id="btn">
+</body>
+</html>
+<script>
+    document.querySelector("#btn").addEventListener("click",function(){
+        let celsius = parseInt(document.getElementById('c').value);
+        let Fahrenheit=(celsius*(9/5))+32;
+        console.log(typeof(Fahrenheit));
+        document.querySelector("#result").innerHTML=`${Fahrenheit} °F`;
+
+    });
+</script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: chocolate;
+            text-align: center;
+            padding: 20px;
+        }
+        span
+        {
+            padding-left: 750px;
+            color:antiquewhite;
+
+        }
+
+    </style>
+</head>
+<body>
+    <span id="result">Result:</span>
+    <br>
+    <br>
+   <label for="marks">Marks:</label>
+   <input type="text" id="marks" placeholder="Enter your marks">
+   <br>
+   <br>
+   <input type="submit" value="click" id="btn"> 
+</body>
+<script>
+    document.querySelector("#btn").addEventListener("click",function(){
+        let m = parseInt(document.querySelector("#marks").value);
+        if(m>=30 && m<55)
+    {
+        document.querySelector("#result").innerHTML=m+"" +"GRADE:C";
+        console.log("#result");
+    }
+    else if(m>=55 && m<75)
+    {
+        document.querySelector("#result").innerHTML=m+" "+"GRADE:B";
+        console.log("#result");
+    }
+    else if(m>=75 && m<100)
+    {
+        document.querySelector("#result").innerHTML=m+" "+"GRADE:A";
+        console.log("#result");
+    }
+    else
+    {
+        document.querySelector("#result").innerHTML="fail";
+        console.log("#result");
+    }
+    });
+</script>
+</html>

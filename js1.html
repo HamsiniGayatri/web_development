@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            text-align: center;
+            background-color: aqua;
+        }
+        label
+        {
+            text-align: center;
+            background-color: silver;
+        }
+    </style>
+</head>
+<body>
+    <span id="result">get age</span>
+    <br>
+    <br>
+    <label for="dob">Enter DOB :</label>
+    <input type="text" id="dob">
+    <br>
+    <br>
+    <label for="present year">Present Year:</label>
+    <input type="text" id="present_year">
+    <br>
+    <br>
+    <input type="submit" value="click" onclick="msg()">
+    <SCript>
+        function msg()
+        {
+           var dob=document.getElementById('dob').value;
+           var present_year =document.getElementById('present_year').value;
+              
+            document.getElementById('result').innerHTML=age;
+
+            var age = present_year-dob;
+            document.write(age);
+
+        }
+    </SCript>
+</body>
+</html>

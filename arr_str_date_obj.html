@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //to represent array
+        //method-1[using literals]
+        let a = [24,35,43,23];
+        for(let i=0;i<a.length;i++)
+    {
+        document.write("<br>"+a[i]+"<br>");
+    }
+    //method-2
+    let b = new Array("hi","hello","namaste");
+    for(let i=0;i<b.length;i++)
+    {
+        document.write("<br>"+b[i]+"<br>");
+    }
+    //string representation is same as that of an array there is small change in syntax for creation of objects that is
+    //let <var> = new String();
+        //****for date,time*****
+        let today = new Date();
+        let day =today.getDay();
+        let month = today.getMonth();
+        let year = today.getFullYear();
+
+        let hh = today.getHours();
+        let mm = today.getMinutes();
+        let ss = today.getSeconds();
+
+        document.write("Date"+day+"/"+month+"/"+year);
+        document.write("Time"+hh+"-"+mm+"-"+ss);
+
+    </script>
+</body>
+</html>

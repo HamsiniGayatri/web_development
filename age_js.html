@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <span id="result">Get Age</span>
+    <br>
+    <br>
+   <label for="dob">Date of birth:</label>
+   <input type="text" id="dob">
+   <br>
+   <br>
+   <label for="present_year">Present year:</label>
+   <input type="text" id="py">
+   <br>
+   <br>
+   <input type="submit" value="click" onclick="call()">
+</body>
+</html>
+<script>
+    function call()
+    {
+        let val1 = document.getElementById("dob").value;
+        let val2 = document.getElementById("py").value;
+
+        let age = val2 - val1;
+        document.getElementById("result").innerHTML="I Know Your Age is: "+age;
+
+    }
+</script>

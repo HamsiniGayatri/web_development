@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: coral;
+            text-align: center;
+        }
+        #result{
+            padding-left: 750px;
+        }
+    </style>
+</head>
+<body>
+    <span id="result">Student Details</span>
+    <br>
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <br>
+    <br>
+    <label for="Id">Id:</label>
+    <input type="text" id="Id">
+    <br>
+    <br>
+    <label for="department">Department:</label>
+    <input type="text" id="department">
+    <br>
+    <br>
+    <label for="sec">Section:</label>
+    <input type="text" id="sec">
+    <br>
+    <br>
+    <label for="sub1">subject1</label>
+    <input type="text" id="sub1">
+    <label for="sub2">subject2</label>
+    <input type="text" id="sub2">
+    <label for="sub3">subject3</label>
+    <input type="text" id="sub3">
+    <br>
+    <br>
+    <label for="sub4">subject4</label>
+    <input type="text" id="sub4">
+    <label for="sub5">subject5</label>
+    <input type="text" id="sub5">
+    <br>
+    <br>
+    <input type="submit" value="click" id="btn">
+</body>
+<script>
+    document.querySelector("#btn").addEventListener("click",function(){
+      let n = document.querySelector("#name").value;
+      let i = document.querySelector("#Id").value;
+      let d = document.querySelector("#department").value;
+      let s = document.querySelector("#sec").value; 
+      let s1= parseInt( document.querySelector("#sub1").value);
+      let s2= parseInt( document.querySelector("#sub2").value);
+      let s3= parseInt( document.querySelector("#sub3").value);
+      let s4= parseInt( document.querySelector("#sub4").value);
+      let s5= parseInt( document.querySelector("#sub5").value);
+      let total = s1 + s2 + s3 + s4 + s5;
+      let avg = total/5;
+      let percentage = (total/500)*100;
+      
+      if(percentage>55 && percentage<=75)
+      {
+        document.querySelector("#result").innerHTML="total:" +total +"avg:" +avg +"percentage:" +percentage +"grade:B";
+
+      }
+      else if(percentage>75 && percentage<=100)
+      {
+        document.querySelector("#result").innerHTML="total:" +total +"avg:" +avg +"percentage:" +percentage +"grade:A";
+      }
+      else
+      {
+        document.querySelector("#result").innerHTML="total:" +total +"avg:" +avg +"percentage:" +percentage +"fail";
+      }
+    });
+</script>
+</html>

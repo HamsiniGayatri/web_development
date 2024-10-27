@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function convertLength(Length,from,to)
+    {
+      if(from === 'miles' && to === 'km')
+      {
+        return `${Length*1.6}km`;
+      }
+      else if(from === 'km' && to === 'miles')
+      {
+        return `${Length/1.6}miles`;
+      }
+      else if(from === to)
+      {
+        return `${Length}`;
+      }
+    }
+      console.log(convertLength(50,'miles','km'));
+      console.log(convertLength(20,'km','miles'));
+      console.log(convertLength(10,'miles','miles'));
+
+</script>
+</body>
+</html>

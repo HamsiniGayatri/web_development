@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object creation
+        //method-1[using literals]
+        let apple = {color:"red",shape:"uneven",size:"small"}
+        document.write(apple.color +"<br>" +apple.shape +"<br>" +apple.size); 
+        //method-2[creating an obj using new keyword]
+        let mango = new Object();//Object is syntax
+        mango.color = "yellow";
+        mango.shape = "uneven";
+        mango.size = "large";
+        document.write(mango.color +"<br>" +mango.shape +"<br>" +mango.size);
+        //method-3 using functions #constructors
+        function orange(color,shape,size)
+        {
+            this.color = color;
+            this.shape = shape;
+            this.size = size;
+        }
+        let o = new orange("orange","round","medium");
+        document.write(o.color +"<br>" +o.shape +"<br>" +o.size);
+    </script>
+</body>
+</html>

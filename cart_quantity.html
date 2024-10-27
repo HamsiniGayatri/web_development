@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+    <input type="submit" value="Show quantity"  onclick="console.log(`Cart Quantity: ${CartQuantity}`)">
+    <input type="submit" value="Add to cart" onclick="CartQuantity = CartQuantity + 1
+   console.log(`Cart Quantity: ${CartQuantity}`) ">
+    <input type="submit" value="+2" onclick="CartQuantity = CartQuantity + 2
+    console.log(`Cart Quantity: ${CartQuantity}`)">
+    <input type="submit" value="+3" onclick="CartQuantity = CartQuantity + 3
+    console.log(`Cart Quantity: ${CartQuantity}`)">
+    <input type="submit" value="Reset Cart" onclick="CartQuantity = 0
+    console.log(`Cart Quantity: ${CartQuantity}`)">
+    <script>
+        //pascal case : CartQuantity
+        //camel case : cartQuantity
+        //kebab-case : cart-quantity
+        //snake_case(not used in javascript):cart_quantity
+        let CartQuantity = 0;
+    </script>
+</body>
+</html>

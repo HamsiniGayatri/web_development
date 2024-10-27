@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: crimson;
+            text-align: center;
+            padding:20px;
+        }
+        button{
+               padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span id="result">Approved/Disapproved</span>
+    <br>
+    <br>
+    <label for="Age">Age:</label>
+    <input type="text" id="age" placeholder="Enter Your Age">
+    <br>
+    <br>
+    <input type="submit" value="click" id="btn">
+</body>
+</html>
+<script>
+    document.querySelector("#btn").addEventListener("click",function(){
+        let age = document.querySelector("#age").value;
+
+        if(age>=18 && age<=60)
+    {
+        document.querySelector("#result").innerHTML="Your Driving License is Approved";
+    }
+    else
+    {
+        document.querySelector("#result").innerHTML="Your Driving License is Not Approved";
+    }
+    
+    });
+</script>

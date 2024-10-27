@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <span id="result">Result</span>
+    <br>
+    <br>
+    <label for="num1">Number1:</label>
+    <input type="text" id="num1">
+    <br>
+    <br>
+    <label for="num2">Number2:</label>
+    <input type="text" id="num2">
+    <br>
+    <br>
+    <input type="submit" value="+ add" onclick="add()">
+    <input type="submit" value="- sub" onclick="sub()">
+    <input type="submit" value="* mul" onclick="mul()">
+    <input type="submit" value="/ div" onclick="div()">
+    <input type="submit" value="% mod" onclick="mod()">
+</body>
+</html>
+<script>
+    function add()
+    {
+        let r1 = document.getElementById("num1").value;
+        let r2 = document.getElementById("num2").value;
+
+        let add = parseInt(r1) + parseInt(r2);
+        document.getElementById("result").innerHTML="value is:"+add;
+    }
+    function sub()
+    {
+        let r1 = document.getElementById("num1").value;
+        let r2 = document.getElementById("num2").value;
+
+        let sub = parseInt(r1) - parseInt(r2);
+        document.getElementById("result").innerHTML="value is:"+sub;
+    }
+    function mul()
+    {
+        let r1 = document.getElementById("num1").value;
+        let r2 = document.getElementById("num2").value;
+
+        let mul = parseInt(r1) * parseInt(r2);
+        document.getElementById("result").innerHTML="value is:"+mul;
+    }
+    function div()
+    {
+        let r1 = document.getElementById("num1").value;
+        let r2 = document.getElementById("num2").value;
+
+        let div = parseInt(r1) / parseInt(r2);
+        document.getElementById("result").innerHTML="value is:"+div;
+    }
+    function mod()
+    {
+        let r1 = document.getElementById("num1").value;
+        let r2 = document.getElementById("num2").value;
+
+        let mod = parseInt(r1) % parseInt(r2);
+        document.getElementById("result").innerHTML="value is:"+mod;
+    }
+</script>

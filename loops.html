@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: brown;
+            text-align: center;
+            color:whitesmoke;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+    <span id="result"></span>
+    <label for="age">Age:</label>
+    <input type="text" id="age" placeholder="Enter age">
+    <br>
+    <input type="submit" value="click" id="btn">
+    <script>
+        document.querySelector('#btn').addEventListener('click',function(){
+         let age  = document.querySelector('#age').value;
+         if(age>=18 || age<=60)
+    {
+        document.querySelector('#result').innerHTML="eligible to vote";
+        
+    }
+    else
+    {
+        document.querySelector('#result').innerHTML="not eligible";
+
+    }
+        });
+   
+    </script>
+</body>
+</html>
